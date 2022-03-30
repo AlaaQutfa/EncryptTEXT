@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncryptTEXT | تشفير النص</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="ltr">
+    <header>
+        <div class="header-left">
+            <h1 id="aquarius"> AQUARIUS </h1>
+            <h2 id="code"> EncryptTEXT </h2>
+        </div>
+        <div class="header-right">
+           <div class="contact">
+               <h2 id="contact">
+                    <span class="c1">C</span>
+                    <span class="c2">o</span>
+                    <span class="c3">n</span>
+                    <span class="c4">t</span>
+                    <span class="c5">a</span>
+                    <span class="c6">c</span>
+                    <span class="c7">t</span>:
+                </h2>
+            </div> 
+            <nav class="icons">
+                <a href="#" target="_black"><img src="img/facebook.png"/></a>
+                <a href="#" target="_black"><img src="img/instagram.png"/></a>
+                <a href="#" target="_black"><img src="img/youtube.png" /></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <h3 id="lang" class="title">Choose Language:</h3>
+                <select id="langva">
+                    <option value="english" id="english">english</option>
+                    <option value="arabic" id="arabic">arabic</option>
+                </select>
+                <button type="button" id="save" onclick="chlang()">Save</button>
+            </li>
+            <li>
+                <h3 id="chcode" class="title">Choose a text conversion mode:</h3>
+                <select id="codeselect">
+                    <option value="btoa" id="Encrypt">Encrypt</option>
+                    <option value="atob" id="Decode">Decode</option>
+                </select>
+            </li>
+            <li>
+                <h3 id="cintext">Enter Text here:</h3>
+                <textarea name="cin" id="textarea" cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                <button type="button" id="view" onclick="decode()">View</button>
+            </li>
+            <li>
+                <h3 id="result">Result here:</h3>
+                <textarea id="screen" cols="30" rows="10" disabled></textarea>
+            </li>
+        </ul>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
